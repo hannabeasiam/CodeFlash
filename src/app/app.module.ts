@@ -4,13 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import {RouterModule, PreloadAllModules } from '@angular/router';
 
+import { LoginComponent } from './login.component';
+import { FindEventComponent } from './findEvent.component';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component'; 
 import { HomeComponent } from './home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FindEventComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +28,14 @@ import { HomeComponent } from './home.component';
       {
         path: 'home',
         component: HomeComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'findEvent',
+        component: FindEventComponent
       }
     ])
 

@@ -1,1 +1,15 @@
-<h1>Find event...!</h1>
+<div class="container">
+    <form (submit)="test()">
+        <label>address</label>
+        <input type="text">
+        <input type="submit" text="Search for event">
+    </form>
+</div>
+    
+    <div class="jumbotron">
+        <agm-map [latitude]="lat" [longitude]="lng">
+
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+    </div>
+
