@@ -11,11 +11,10 @@ import { codeFlashBackend } from "./codeFlash_backend.service";
     providers: [codeFlashBackend]
 })
 export class LoginComponent {
-    backend: codeFlashBackend;
     userName: string;
     passWord: string;
     
-    constructor(){
+    constructor(private router: Router, private ucb: codeFlashBackend){
 
     }
 
